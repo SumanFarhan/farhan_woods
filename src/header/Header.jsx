@@ -1,17 +1,17 @@
-import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
+import * as React from "react"
+import AppBar from "@mui/material/AppBar"
+import Box from "@mui/material/Box"
+import Toolbar from "@mui/material/Toolbar"
+import IconButton from "@mui/material/IconButton"
+import Typography from "@mui/material/Typography"
+import Menu from "@mui/material/Menu"
+import MenuIcon from "@mui/icons-material/Menu"
+import Container from "@mui/material/Container"
+import Button from "@mui/material/Button"
+import MenuItem from "@mui/material/MenuItem"
 import Image from "mui-image"
-import logo from "../asssets/logo.png";
-import "./header.css";
+import logo from "../asssets/logo.png"
+import "./header.css"
 
 const pages = [
   "Home",
@@ -20,18 +20,18 @@ const pages = [
   "Services",
   "Contact us",
   "Location",
-];
+]
 
 const ResponsiveAppBar = () => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = React.useState(null)
 
   const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
+    setAnchorElNav(event.currentTarget)
+  }
 
   const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+    setAnchorElNav(null)
+  }
 
   return (
     <AppBar position="static" className="app_bar">
@@ -80,7 +80,7 @@ const ResponsiveAppBar = () => {
               className="menu"
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "#b98424", display: "block",width:'150px'}}
+                sx={{ my: 2, color: "#b98424", display: "block",width:'155px'}}
               >
                 {page}
               </Button>
@@ -89,28 +89,6 @@ const ResponsiveAppBar = () => {
         </Toolbar>
       </Container>
     </AppBar>
-  );
-};
-export default ResponsiveAppBar;
-
-
-
-// <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-// <Typography
-//   variant="h5"
-//   noWrap
-//   component="a"
-//   href=""
-//   sx={{
-//     mr: 2,
-//     display: { xs: "flex", md: "none" },
-//     flexGrow: 1,
-//     fontFamily: "monospace",
-//     fontWeight: 700,
-//     letterSpacing: ".3rem",
-//     color: "inherit",
-//     textDecoration: "none",
-//   }}
-// >
-//   logo
-// </Typography>
+  )
+}
+export default ResponsiveAppBar

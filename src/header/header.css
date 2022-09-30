@@ -22,10 +22,6 @@
         display: none;
     }
     .logo_responsive{
-        /* display: flex; */
-        /* margin-right:300px; */
-        /* align-items: center !important; */
-        /* justify-content: center !important; */
          width: 30% !important;
         height: 10%;
         overflow: hidden;

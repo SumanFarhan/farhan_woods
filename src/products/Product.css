@@ -1,0 +1,19 @@
+.product{
+    display: flex;
+    height: 1000px;
+    width: 100%;
+    flex-direction: column;
+    background-color: black;
+}
+.product > h2{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    color: #b98424;
+    margin: 1em 0 1em 0;
+}
+.Product_image{
+    width:98%;
+    height:85%;
+    /* object-fit: cover; */
+}

@@ -1,0 +1,31 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 6em;
+  
+}
+.about_heading >h2{
+  font-weight: 600;
+  font-size: 30px;
+  color: #b98424;
+  margin: 1em 0 1em 0;
+}
+.aboutContent >p{
+    width: 70%;
+    text-align: Justify;
+    margin-left: 16em;
+    font-size: 16px;
+    }
+
+    @media screen and (max-width: 1200px){
+      .aboutContent >p
+      {
+        margin-left: 2px;
+        width: 97%;
+      }
+      
+    }

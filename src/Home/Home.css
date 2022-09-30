@@ -1,0 +1,8 @@
+.img_carousel {
+  height: 650px;
+  width: 100%;
+}
+.ant-carousel .slick-list {
+    padding-bottom: 1em !important;
+  }
+

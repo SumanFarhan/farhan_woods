@@ -1,0 +1,40 @@
+.linkText {
+  text-decoration: none !important;
+  font-size: 15px;
+  line-height: 30px;
+}
+.Heading {
+  color: white;
+  font-weight: 600;
+}
+.line {
+  border: none;
+  height: 1px;
+  color: white; /* old IE */
+  background-color: white;
+}
+.text_contactus {
+  display: flex !important;
+}
+.footerCopyright {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 60px;
+  background-color: #493826;
+}
+.space {
+  width: 10%;
+}
+.textFooterCopyright{
+  font-size: 15px;
+  font-weight: 600;
+}
+.textFooterCopyrightdiv{
+  align-self: center;
+  width: 70%;
+}
+.socialIcon {
+  align-self: center;
+  width: 20%;
+}

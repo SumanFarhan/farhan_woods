@@ -1,0 +1,9 @@
+.ant-carousel .slick-dots {
+  display: none !important;
+}
+@media screen and (max-width: 1100px) {
+  .img_carousel {
+    width: inherit !important;
+    height: 50% !important;
+  }
+}
