@@ -7,8 +7,8 @@ const Product = () => {
     <>
       <div className="product">
         <h2>Products</h2>
-        <div class="doorImagesGrid">
-          {Productimage?.map((v, i) => {
+        <div className="box">
+        {Productimage?.map((v, i) => {
             return (
               <div>
                 <img src={v?.img} className="Product_image" />
@@ -16,15 +16,17 @@ const Product = () => {
             );
           })}
         </div>
-        <div class="doorImagesGrid">
+        
+        {/* <div class="doorImagesGrid">
           {Productimage?.map((v, i) => {
             return (
+
               <div>
                 <img src={v?.img} className="Product_image" />
               </div>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </>
   );

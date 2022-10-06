@@ -3,7 +3,7 @@
   height: 1000px;
   width: 100%;
   flex-direction: column;
-  background-color: black;
+  /* background-color: black; */
 }
 .product > h2 {
   text-align: center;
@@ -12,14 +12,25 @@
   color: #b98424;
   margin: 1em 0 1em 0;
 }
-.doorImagesGrid {
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+}
+.box>div{
+margin:2px
+}
+      
+/* .doorImagesGrid {
   display: flex;
   flex-wrap: nowrap;
 }
 .doorImagesGrid > div {
   width: 100%;
   height: 90%;
-}
+} */
 .Product_image {
   width: 98%;
   height: 85%;
