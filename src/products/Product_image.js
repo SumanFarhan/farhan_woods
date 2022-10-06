@@ -16,9 +16,15 @@ const itemData = [
   {
     img: image,
   },
-  //  {
-  //   img: image,
-  // },
+   {
+    img: image,
+  },
+  {
+    img: image,
+  },
+  {
+    img: image,
+  },
 
 
 ];
