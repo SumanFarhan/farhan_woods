@@ -21,7 +21,7 @@
   display: flex;
   flex-wrap: nowrap;
   height: 60px;
-  background-color: #493826;
+  background:linear-gradient(to right,#b98424,#493826);
 }
 .space {
   width: 10%;
