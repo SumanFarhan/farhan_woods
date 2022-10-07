@@ -17,6 +17,7 @@
   display: flex !important;
 }
 .footerCopyright {
+  width: 100%;
   color: white;
   display: flex;
   flex-wrap: nowrap;
@@ -37,4 +38,23 @@
 .socialIcon {
   align-self: center;
   width: 20%;
+}
+
+@media screen and (max-width: 1200px){
+  .footerMap{
+    width:250px;
+    height: 170px;
+  }
+}
+@media screen and (max-width: 560px){
+  .footerMap{
+    width:460px;
+    height: 170px;
+  }
+}
+@media screen and (max-width: 500px){
+  .footerMap{
+    width:200px;
+    height: 170px;
+  }
 }

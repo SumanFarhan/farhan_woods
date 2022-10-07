@@ -89,9 +89,10 @@ const Footer = () => {
               </Box>
               <Box>
                 <iframe
+                  className="footerMap"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.871597296205!2d67.04498604981399!3d24.79984995371534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33cfd85283a2f%3A0x8e4443010f37c9d6!2sKFC!5e0!3m2!1sen!2s!4v1664521420778!5m2!1sen!2s"
                   width="350"
-                  height="200"
+                  height="170"
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
@@ -105,7 +106,7 @@ const Footer = () => {
       <hr/>
         <div className="space"></div>
         <div className="textFooterCopyrightdiv">
-          <span className="textFooterCopyright">Farhan Woods</span> &copy;{new Date().getFullYear()}
+        &copy; Copyright {new Date().getFullYear()}  - <span className="textFooterCopyright">  Farhan Woods</span> 
         </div>
         <div className="socialIcon"><FacebookIcon/></div>
       </div>

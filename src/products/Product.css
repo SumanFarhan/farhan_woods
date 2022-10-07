@@ -1,6 +1,6 @@
 .product {
   display: flex;
-  height: 160vh;
+  height: auto;
   flex-direction: column;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .Product_image:hover {
-  opacity: 0.1;
+  /* opacity: 0.1; */
 }
 
 .productButton {
@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background:linear-gradient(to right,#b98424,#493826);
+  background: linear-gradient(to right, #b98424, #493826);
 }
 
 /* .btn{

@@ -13,10 +13,17 @@ body{
     height:100%;
     width:100;
   }
+  .main-form >h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    color: #b98424;
+    margin: 5px 0 5px 0;
+  }
   .main-body{
     background-image: url('https://images.pexels.com/photos/955081/pexels-photo-955081.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=700&w=540');
     background-repeat: no-repeat;
-    height:550px;
+    height:570px;
     width:100%;
   }
   .main-body ::after{
