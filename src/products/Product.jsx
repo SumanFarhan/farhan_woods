@@ -1,8 +1,9 @@
 import React from "react";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import "./Product.css";
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Productimage from "./Product_image";
+import "./Product.css";
 
 const Product = () => {
   return (
@@ -22,7 +23,7 @@ const Product = () => {
         </Box>
       </div>
       <div class="productButton">
-        <div><button className="">View all Products</button></div>
+        <div><button className="btn">View all Products <ArrowForwardIosIcon className="arrowIcon"/></button></div>
       </div>
     </>
   );
