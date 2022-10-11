@@ -1,0 +1,49 @@
+.mainConcept {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leftConcept {
+    width: 50%;
+}
+
+.rightConcept {
+    width: 50%;
+}
+
+.concept-para {
+    margin: 30px 30px 1px 30px;
+    padding: 30px;
+}
+
+.headingBanner {
+    font-weight: 600;
+    font-size: 15px;
+    color: #b98424;
+    margin: 1em 0 0em 1.4em;
+}
+
+.circle {
+    margin-top: 40px !important;
+    margin-left: 4.5em !important;
+    margin-bottom:30px !important;
+}
+
+@media (max-width: 998px) {
+    .mainConcept {
+        flex-direction: column;
+    }
+
+    .leftConcept {
+        width: 100%;
+    }
+
+    .rightConcept {
+        width: 100%;
+    }
+
+    .concept-para {
+        text-align: justify;
+    }
+
+}

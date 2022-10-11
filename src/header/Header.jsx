@@ -39,7 +39,7 @@ const ResponsiveAppBar = () => {
         <Toolbar disableGutters>
           <img src={logo} className="logo" />
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <IconButton 
+            <IconButton
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
@@ -73,14 +73,14 @@ const ResponsiveAppBar = () => {
               ))}
             </Menu>
           </Box>
-          <Image src={logo} className="logo_responsive" sx={{ display: { xs: "flex", md: "none" }, mr: 1}}/>
+          <Image src={logo} className="logo_responsive" sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
-              className="menu"
+                className="menu"
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "#b98424", display: "block",width:'155px'}}
+                sx={{ my: 2, color: "#b98424", display: "block", width: '155px' }}
               >
                 {page}
               </Button>

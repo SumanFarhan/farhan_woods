@@ -15,6 +15,7 @@
 }
 .text_contactus {
   display: flex !important;
+  /* flex-wrap: nowrap; */
 }
 .footerCopyright {
   width: 100%;

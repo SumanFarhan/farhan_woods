@@ -10,7 +10,7 @@ const About = () => {
         <h2>About Us</h2>
         </div>
         <div className="aboutContent">
-        <Fade bottom>
+        <Fade left>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -22,6 +22,8 @@ const About = () => {
             and more recently with desktop publishing software like Aldus
             PageMaker including versions of Lorem Ipsum.
           </p>
+          </Fade>
+          <Fade right>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -36,6 +38,7 @@ const About = () => {
           </Fade>
         </div>
       </div>
+      
     </>
   );
 };

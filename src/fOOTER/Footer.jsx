@@ -14,14 +14,14 @@ const Footer = () => {
   return (
     <>
       <Box
-        px={{ xs: 3, sm: 10 }}
+        px={{ xs: 3, sm: 9 }}
         py={{ xs: 3, sm: 5 }}
         bgcolor="#b98424"
         color="white"
       >
         <Container maxWidth="lg">
           <Grid container spacing={6}>
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={6} md={4}>
               <Box>
                 <h2 className="Heading">Menu</h2>
               </Box>
@@ -50,7 +50,7 @@ const Footer = () => {
                 <hr className="line" />
               </Box>
             </Grid>
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={6} md={4}>
               <Box>
                 <h2 className="Heading">Contact Us</h2>
               </Box>
@@ -83,7 +83,7 @@ const Footer = () => {
               </Box>
               <hr className="line" />
             </Grid>
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={6} md={4}>
               <Box>
                 <h2 className="Heading">Location</h2>
               </Box>
@@ -103,12 +103,12 @@ const Footer = () => {
         </Container>
       </Box>
       <div className="footerCopyright">
-      <hr/>
+        <hr />
         <div className="space"></div>
         <div className="textFooterCopyrightdiv">
-        &copy; Copyright {new Date().getFullYear()}  - <span className="textFooterCopyright">  Farhan Woods</span> 
+          &copy; Copyright {new Date().getFullYear()}  - <span className="textFooterCopyright">  Farhan Woods</span>
         </div>
-        <div className="socialIcon"><FacebookIcon/></div>
+        <div className="socialIcon"><FacebookIcon /></div>
       </div>
 
     </>

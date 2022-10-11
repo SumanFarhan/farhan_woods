@@ -14,11 +14,10 @@
 
 .ProductImagesGrid {
   position: relative;
-  /* margin: -3px 3px; */
 }
 
 .Product_image {
-  transition: .5s ease;
+  /* transition: .5s ease; */
   width: 98%;
   height: 90%;
 }
@@ -40,7 +39,7 @@
   cursor: pointer;
   position: relative;
   padding: 7px 20px;
-  background:transparent;
+  background: transparent;
   font-size: 18px;
   transition: all 1s;
   font-weight: normal;
@@ -48,12 +47,14 @@
   letter-spacing: 1;
   color: white;
 }
+
 .btn:hover {
   border: none;
   color: black;
   background-color: #b98424;
 }
-.arrowIcon{
+
+.arrowIcon {
   padding-top: 9px;
   height: 22px !important;
 }

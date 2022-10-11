@@ -7,6 +7,7 @@ import About from "../About/About";
 import Product from "../products/Product";
 import Footer from "../fOOTER/Footer";
 import Contact from "../Contact/Contact";
+import Banner from "../banner/Banner";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <About/>
       <Product/>
       <Contact/>
+      <Banner/>
       <Footer/>
     </>
   );

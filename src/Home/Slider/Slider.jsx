@@ -1,24 +1,20 @@
-import React from "react";
+ import React from "react";
 import "./Slider.css"
 import { Carousel } from "antd";
-import Door from "../../asssets/Door.jpg";
-import Window from "../../asssets/doors_design.jpg";
-import DoorCatolgue from "../../asssets/Doors.jpeg";
-import WindowImages from "../../asssets/Window.jpg";
+import Banner3 from "../../asssets/banner3.png";
+import Banner2 from "../../asssets/banner2.png";
+import Banner from "../../asssets/banner.png";
 
 const sliderData = [
   {
-    img: Door,
+    img: Banner,
   },
   {
-    img: WindowImages,
+    img: Banner2,
   },
   {
-    img: Window,
-  },
-  {
-    img: DoorCatolgue,
-  },
+    img: Banner3,
+  }
 ];
 
 const Slider = () => {
