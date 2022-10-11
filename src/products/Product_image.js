@@ -15,15 +15,19 @@ import image13 from "../asssets/ART-138-142.jpg"
 const itemData = [
   {
     img: image,
+    text:"Product Images",
   },
   {
     img: image2,
+    text:"Product Images",
   },
   {
     img: image3,
+    text:"Product Images",
   },
   {
     img: image4,
+    text:"Product Images",
   },
   {
     img: image5,

@@ -8,6 +8,7 @@ import Product from "../products/Product";
 import Footer from "../fOOTER/Footer";
 import Contact from "../Contact/Contact";
 import Banner from "../banner/Banner";
+import Services from "../Services/Services"
 
 const Home = () => {
   return (
@@ -16,8 +17,9 @@ const Home = () => {
       <Slider />
       <About/>
       <Product/>
-      <Contact/>
+      {/* <Services/> */}
       <Banner/>
+      <Contact/>
       <Footer/>
     </>
   );
