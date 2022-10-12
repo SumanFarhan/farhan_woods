@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import "./Services.css"
 
+
 const servicesImages = [
   // {
   //   img:
@@ -48,8 +49,8 @@ const Services = () => {
             })}
           </Grid>
         </Box>
-      </div>
 
+      </div>
     </>
   )
 }

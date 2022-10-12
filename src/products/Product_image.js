@@ -31,36 +31,47 @@ const itemData = [
   },
   {
     img: image5,
+    text:"Product Images",
   },
    {
     img: image6,
+    text:"Product Images",
   },
   {
     img: image7,
+    text:"Product Images",
   },
   {
     img: image8,
+    text:"Product Images",
   },
   {
     img: image9,
+    text:"Product Images",
   },
   {
     img: image10,
+    text:"Product Images",
   },
   {
     img: image11,
+    text:"Product Images",
   },
   {
     img: image12,
+    text:"Product Images",
   },
   {
     img: image13,
+    text:"Product Images",
   },
   {
     img: image4,
+    text:"Product Images",
   },
   {
     img: image,
+    text:"Product Images",
   },
 
 

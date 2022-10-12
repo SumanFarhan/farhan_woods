@@ -13,13 +13,13 @@ const Product = () => {
         <Zoom left>
           <h2>Products</h2>
         </Zoom>
-        <Box sx={{ width: '100%' }} className="ProductImagesGrid">
+        <Box sx={{ width: '100%' }}>
           <Grid container rowSpacing={0.1} spacing={0.1}>
             {Productimage?.map((v, i) => {
               return (
-                <Grid item xs={6} sm={4} md={4} lg={2.4}>
+                <Grid item xs={6} sm={4} md={4} lg={2.4} className="productImageConatiner">
                   <img src={v?.img} className="Product_image" />
-                  <div class="overlay">
+                  <div class="overlay overLayLeft">
                     <div class="text">{v?.text}</div>
                   </div>
                 </Grid>
