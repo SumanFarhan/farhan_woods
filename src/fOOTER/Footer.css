@@ -2,6 +2,7 @@
   text-decoration: none !important;
   font-size: 15px;
   line-height: 30px;
+  color: white !important;
 }
 .Heading {
   color: white;
@@ -39,10 +40,12 @@
 .textFooterCopyrightdiv{
   align-self: center;
   width: 70%;
+  cursor: pointer;
 }
 .socialIcon {
   align-self: center;
   width: 20%;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px){

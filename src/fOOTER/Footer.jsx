@@ -2,26 +2,31 @@ import React from "react";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
-import Link from "@mui/material/Link";
+// import Link from "@mui/material/Link";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PhoneIcon from "@mui/icons-material/Phone";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import BusinessIcon from "@mui/icons-material/Business";
 import FacebookIcon from '@mui/icons-material/Facebook';
+import { Link, animateScroll as scroll } from "react-scroll";
 import "./Footer.css";
 
 const footerMenuLink = [
   {
     text: "About us",
+    link: "about"
   },
   {
-    text: "Products"
+    text: "Products",
+    link: "product"
   },
   {
-    text: "Services"
+    text: "Services",
+    link: "services"
   },
   {
-    text: "Download Catolgue"
+    text: "Download Catolgue",
+    link: "home"
   },
 ]
 const footerContact = [
@@ -61,7 +66,8 @@ const Footer = () => {
               {footerMenuLink.map((v, i) => {
                 return (
                   <Box>
-                    <Link className="linkText" href="/" color="inherit">
+                    <Link to={v?.link}
+                      className="linkText" color="inherit">
                       {v?.text}
                     </Link>
                     <hr className="line" />
@@ -112,7 +118,9 @@ const Footer = () => {
         <hr />
         <div className="space"></div>
         <div className="textFooterCopyrightdiv">
-          &copy; Copyright {new Date().getFullYear()}  - <span className="textFooterCopyright">  Farhan Woods</span>
+          &copy; Copyright {new Date().getFullYear()}  - <span className="textFooterCopyright" onClick={() => {
+            scroll.scrollToTop();
+          }}>  Farhan Woods</span>
         </div>
         <div className="socialIcon"><FacebookIcon /></div>
       </div>

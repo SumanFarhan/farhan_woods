@@ -11,32 +11,33 @@ import Button from "@mui/material/Button"
 import MenuItem from "@mui/material/MenuItem"
 import Image from "mui-image"
 import logo from "../asssets/logo.png"
+import { Link, animateScroll as scroll } from "react-scroll";
 import "./header.css"
 
 const pages = [
   {
     page: "Home",
-    link: "#home"
+    link: "home"
   },
   {
     page: "About us",
-    link: "#about"
+    link: "about"
   },
   {
     page: "Products",
-    link: "#product"
+    link: "product"
   },
   {
     page: "Services",
-    link: "#services"
+    link: "services"
   },
   {
     page: "Contact us",
-    link: "#contact"
+    link: "contact"
   },
   {
     page: "Location",
-    link: "#location"
+    link: "location"
   },
 
 ]
@@ -56,10 +57,11 @@ const ResponsiveAppBar = () => {
     <AppBar position="static" className="app_bar">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          {/* <a href="#home"> */}
-            <img src={logo}   className="logo"/>
-            {/* </a> */}
-
+          <img src={logo} className="logo"
+            onClick={() => {
+              scroll.scrollToBottom();
+            }}
+          />
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -89,9 +91,19 @@ const ResponsiveAppBar = () => {
               }}
             >
               {pages.map((v, i) => (
-                <MenuItem key={i} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center"><a href={v?.link}
-                    className="menu">{v?.page}</a></Typography>
+                <MenuItem key={i}
+                  onClick={handleCloseNavMenu}
+                >
+                  <Typography className="navMenu"
+                    textAlign="center">
+                    <Link
+                      className="menu"
+                      activeClass="active"
+                      to={v?.link}
+                      spy={true}
+                      smooth={true}
+                    >{v?.page}</Link>
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -100,12 +112,18 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((v) => (
               <Button
+                className="navMenu"
                 key={v?.page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, display: "block", width: '118px' }}
               >
-                <a href={v?.link}
-                  className="menu">{v?.page}</a>
+                <Link
+                  className="menu"
+                  activeClass="active"
+                  to={v?.link}
+                  spy={true}
+                  smooth={true}
+                >{v?.page}</Link>
               </Button>
             ))}
           </Box>

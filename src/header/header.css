@@ -4,7 +4,7 @@
 
 .logo {
     width: 80%;
-    height: 168px !important;
+    height: 167px !important;
     overflow: hidden;
     margin-top: -80px;
     margin-bottom: -80px;
@@ -21,9 +21,13 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
-.menu:hover {
-    color: black;
-    transition: color 100ms ease-out;
+.navMenu {
+    letter-spacing: 0.5px !important;
+}
+
+.navMenu>.active {
+    /* background-color: aqua !important; */
+    border-bottom: 2px solid  #493826!important;
 }
 
 @media screen and (max-width: 900px) {
@@ -41,7 +45,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .logo{
+    .logo {
         width: 80%;
         height: 140px !important;
         overflow: hidden;
