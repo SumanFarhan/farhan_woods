@@ -15,63 +15,63 @@ import image13 from "../asssets/ART-138-142.jpg"
 const itemData = [
   {
     img: image,
-    text:"Product Images",
+    text: "Art # 010 – 011 | PREMIUM QUALITY COMPOSITE DOORS",
   },
   {
     img: image2,
-    text:"Product Images",
+    text: "Art # 012 – 014 | PREMIUM QUALITY COMPOSITE DOORS",
   },
   {
     img: image3,
-    text:"Product Images",
+    text: "Art # 015 – 020 | PREMIUM QUALITY COMPOSITE DOORS",
   },
   {
     img: image4,
-    text:"Product Images",
+    text: "Art # 025 – 030 | PREMIUM QUALITY COMPOSITE DOORS",
   },
   {
     img: image5,
-    text:"Product Images",
+    text: "Art # 035 – 040 | PREMIUM QUALITY COMPOSITE DOORS",
   },
-   {
+  {
     img: image6,
-    text:"Product Images",
+    text: "Art # 045 – 050 | PREMIUM QUALITY COMPOSITE DOORS",
   },
   {
     img: image7,
-    text:"Product Images",
+    text: "Art # 075 – 080 | PREMIUM QUALITY COMPOSITE DOORS",
   },
   {
     img: image8,
-    text:"Product Images",
+    text: "Art # 085 – 090 | PREMIUM QUALITY COMPOSITE DOORS",
   },
   {
     img: image9,
-    text:"Product Images",
+    text: "Art # 095 – 100 | PREMIUM QUALITY COMPOSITE DOORS",
   },
   {
     img: image10,
-    text:"Product Images",
+    text: "Art # 105 – 110 | PREMIUM QUALITY COMPOSITE DOORS",
   },
   {
     img: image11,
-    text:"Product Images",
+    text: "Art # 120 – 125 | PREMIUM QUALITY COMPOSITE DOORS",
   },
   {
     img: image12,
-    text:"Product Images",
+    text: "Art # 130 – 135 | PREMIUM QUALITY COMPOSITE DOORS",
   },
   {
     img: image13,
-    text:"Product Images",
+    text: "Art # 138 – 142 | PREMIUM QUALITY COMPOSITE DOORS",
   },
   {
     img: image4,
-    text:"Product Images",
+    text: "Art # 025 – 030 | PREMIUM QUALITY COMPOSITE DOORS",
   },
   {
     img: image,
-    text:"Product Images",
+    text: "Art # 010 – 011 | PREMIUM QUALITY COMPOSITE DOORS",
   },
 
 

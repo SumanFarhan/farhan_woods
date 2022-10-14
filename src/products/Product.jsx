@@ -9,7 +9,7 @@ import "./Product.css";
 const Product = () => {
   return (
     <>
-      <div className="product">
+      <div className="product" id="product">
         <Zoom left>
           <h2>Products</h2>
         </Zoom>
@@ -20,7 +20,7 @@ const Product = () => {
                 <Grid item xs={6} sm={4} md={4} lg={2.4} className="productImageConatiner">
                   <img src={v?.img} className="Product_image" />
                   <div class="overlay overLayLeft">
-                    <div class="text">{v?.text}</div>
+                    <span class="text">{v?.text}</span>
                   </div>
                 </Grid>
               );

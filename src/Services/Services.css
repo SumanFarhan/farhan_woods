@@ -1,5 +1,45 @@
-.mainn {
-    height: 500px;
+.mainServices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
     width: 100%;
     background-color: burlywood;
+    margin-bottom: 6em;
 }
+.servicesHeading>h2{
+    font-weight: 600;
+    font-size: 30px;
+    color: #b98424;
+    margin: 1em 0 1em 0;
+}
+.servicesCard{
+    display: flex;
+    border-radius: 50px;
+    width: 100%;
+}
+.servicesLink{
+    width:30%;
+    background-color: orangered;
+}
+.servicesimage{
+    width: 70%;
+    background-color: aqua;
+}
+/* .container-img {
+    height: 350px;
+    width: 100%;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.container-img img {
+    width: 100%;
+    height: 350px;
+    display: block;
+    transition: transform 2s;
+}
+
+.container-img:hover img {
+    transform: scale(1.3);
+} */

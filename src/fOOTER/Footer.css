@@ -15,7 +15,11 @@
 }
 .text_contactus {
   display: flex !important;
-  /* flex-wrap: nowrap; */
+  align-items: center !important;
+}
+.text_contactus > .MuiSvgIcon-root {
+  padding: 5px;
+  font-size: 27px !important;
 }
 .footerCopyright {
   width: 100%;
@@ -23,7 +27,7 @@
   display: flex;
   flex-wrap: nowrap;
   height: 60px;
-  background:linear-gradient(to right,#b98424,#493826);
+  background:linear-gradient(to left,#b98424,#493826);
 }
 .space {
   width: 10%;

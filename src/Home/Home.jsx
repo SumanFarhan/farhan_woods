@@ -13,6 +13,7 @@ import Services from "../Services/Services"
 const Home = () => {
   return (
     <>
+    <div id="home">
       <Header />
       <Slider />
       <About/>
@@ -21,6 +22,7 @@ const Home = () => {
       <Banner/>
       <Contact/>
       <Footer/>
+      </div>
     </>
   );
 };

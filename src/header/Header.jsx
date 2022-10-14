@@ -14,12 +14,31 @@ import logo from "../asssets/logo.png"
 import "./header.css"
 
 const pages = [
-  "Home",
-  "About us",
-  "Products",
-  "Services",
-  "Contact us",
-  "Location",
+  {
+    page: "Home",
+    link: "#home"
+  },
+  {
+    page: "About us",
+    link: "#about"
+  },
+  {
+    page: "Products",
+    link: "#product"
+  },
+  {
+    page: "Services",
+    link: "#services"
+  },
+  {
+    page: "Contact us",
+    link: "#contact"
+  },
+  {
+    page: "Location",
+    link: "#location"
+  },
+
 ]
 
 const ResponsiveAppBar = () => {
@@ -37,7 +56,10 @@ const ResponsiveAppBar = () => {
     <AppBar position="static" className="app_bar">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <img src={logo} className="logo" />
+          {/* <a href="#home"> */}
+            <img src={logo}   className="logo"/>
+            {/* </a> */}
+
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -66,23 +88,24 @@ const ResponsiveAppBar = () => {
                 display: { xs: "block", md: "none" }
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+              {pages.map((v, i) => (
+                <MenuItem key={i} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center"><a href={v?.link}
+                    className="menu">{v?.page}</a></Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
           <Image src={logo} className="logo_responsive" sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
+            {pages.map((v) => (
               <Button
-                className="menu"
-                key={page}
+                key={v?.page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "#b98424", display: "block", width: '155px' }}
+                sx={{ my: 2, display: "block", width: '118px' }}
               >
-                {page}
+                <a href={v?.link}
+                  className="menu">{v?.page}</a>
               </Button>
             ))}
           </Box>

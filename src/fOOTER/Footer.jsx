@@ -10,6 +10,38 @@ import BusinessIcon from "@mui/icons-material/Business";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import "./Footer.css";
 
+const footerMenuLink = [
+  {
+    text: "About us",
+  },
+  {
+    text: "Products"
+  },
+  {
+    text: "Services"
+  },
+  {
+    text: "Download Catolgue"
+  },
+]
+const footerContact = [
+  {
+    icon: <MailOutlineIcon />,
+    text: "farhanhashim4600@gmail.com",
+  },
+  {
+    icon: <PhoneIcon />,
+    text: "03342300564"
+  },
+  {
+    icon: <AccessTimeIcon />,
+    text: "Working Hours:Monday-Saturday|10:00am-06:00pm"
+  },
+  {
+    icon: <BusinessIcon />,
+    text: "XYZ,karachi"
+  },
+]
 const Footer = () => {
   return (
     <>
@@ -18,6 +50,7 @@ const Footer = () => {
         py={{ xs: 3, sm: 5 }}
         bgcolor="#b98424"
         color="white"
+        id="location"
       >
         <Container maxWidth="lg">
           <Grid container spacing={6}>
@@ -25,63 +58,36 @@ const Footer = () => {
               <Box>
                 <h2 className="Heading">Menu</h2>
               </Box>
-              <Box>
-                <Link className="linkText" href="/" color="inherit">
-                  About us
-                </Link>
-                <hr className="line" />
-              </Box>
-              <Box>
-                <Link className="linkText" href="/" color="inherit">
-                  Products
-                </Link>
-                <hr className="line" />
-              </Box>
-              <Box>
-                <Link className="linkText" href="/" color="inherit">
-                  Download Catolgue
-                </Link>
-                <hr className="line" />
-              </Box>
-              <Box>
-                <Link className="linkText" href="/" color="inherit">
-                  Location
-                </Link>
-                <hr className="line" />
-              </Box>
+              {footerMenuLink.map((v, i) => {
+                return (
+                  <Box>
+                    <Link className="linkText" href="/" color="inherit">
+                      {v?.text}
+                    </Link>
+                    <hr className="line" />
+                  </Box>
+                );
+              })}
             </Grid>
+            {/* contact us */}
             <Grid item xs={12} sm={6} md={4}>
               <Box>
                 <h2 className="Heading">Contact Us</h2>
               </Box>
-              <Box>
-                <span className="text_contactus">
-                  <MailOutlineIcon />
-                  farhanhashim4600@gmail.com
-                </span>
-              </Box>
-              <hr className="line" />
-              <Box>
-                <span className="text_contactus">
-                  <PhoneIcon />
-                  03342300564
-                </span>
-              </Box>
-              <hr className="line" />
-              <Box>
-                <span className="text_contactus">
-                  <AccessTimeIcon />
-                  Working Hours:Monday-Saturday|10:00am-06:00pm
-                </span>
-              </Box>
-              <hr className="line" />
-              <Box>
-                <span className="text_contactus">
-                  <BusinessIcon />
-                  XYZ,karachi
-                </span>
-              </Box>
-              <hr className="line" />
+              {footerContact?.map((v, i) => {
+                return (
+                  <>
+                    <Box>
+                      <span className="text_contactus" >
+                        {v?.icon}
+                        {v?.text}
+                      </span>
+                    </Box>
+                    <hr className="line" />
+                  </>
+                );
+              })}
+
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
               <Box>

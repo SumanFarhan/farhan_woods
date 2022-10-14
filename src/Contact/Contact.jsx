@@ -46,7 +46,7 @@ const Contact = () => {
   
   return (
     <>
-      <div className="main">
+      <div className="main" id="contact">
         <div className="main-body">
           <input className="contact" type="text" value="+92334-2300564" readOnly />
         </div>
