@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import Home from './Home/Home'
 import logo from '../src/asssets/logo.png'
-// import "./App.css"
+import "./App.css"
 
 
 const App = () => {
@@ -17,9 +17,9 @@ const App = () => {
   return (
     <>
       {/* {loading ?
-        <img src={logo} className="App-logo"/>: 
+        <img src={logo} className="App-logo"/>:
       } */}
-<Home />
+ <Home />
     </>
   )
 }

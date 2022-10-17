@@ -13,7 +13,7 @@ const Banner = () => {
             <div className="mainConcept">
                 <div className="leftConcept">
                     <Fade left>
-                        <p className='concept-para'>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                        <p className='concept-para'>A good design should be based on the client's needs and preferences.The second step is approved by customer,in order to achieve this, we asure that the materials we use are high quality.Our customers deserve to feel safe about their purchase. </p>
                     </Fade>
                 </div>
                 <div className="rightConcept">

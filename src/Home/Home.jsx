@@ -13,15 +13,15 @@ import Services from "../Services/Services"
 const Home = () => {
   return (
     <>
-    <div id="home">
-      <Header />
-      <Slider />
-      <About/>
-      <Product/>
-      {/* <Services/> */}
-      <Banner/>
-      <Contact/>
-      <Footer/>
+      <div id="home">
+        <Header />
+        <Slider />
+        <About />
+        <Product />
+        <Services />
+        <Banner />
+        <Contact />
+        <Footer />
       </div>
     </>
   );

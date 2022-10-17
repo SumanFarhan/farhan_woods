@@ -5,6 +5,7 @@
 
 .leftConcept {
     width: 50%;
+    padding: 60px 0;
 }
 
 .rightConcept {
@@ -12,8 +13,9 @@
 }
 
 .concept-para {
+    text-align: justify;
     margin: 30px 30px 1px 30px;
-    padding: 30px;
+    /* padding: 30px; */
 }
 
 .headingBanner {
@@ -24,9 +26,9 @@
 }
 
 .circle {
-    margin-top: 40px !important;
+    margin-top: 50px !important;
     margin-left: 4.5em !important;
-    margin-bottom:30px !important;
+    margin-bottom: 70px !important;
 }
 
 @media (max-width: 998px) {

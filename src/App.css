@@ -45,14 +45,14 @@
 
 @keyframes App-logo-spin {
   from {
-    /* transform: rotate(0deg);
-    transform: translate(100px); */
-    transform: skewX(25deg);
+    /* transform: rotate(0deg);  */
+    /* transform: translate(100px);  */
+    /* transform: skewX(25deg); */
   }
 
   to {
-    transform: skewY(25deg);
-    /* transform: rotate(360deg);
-    transform: translate(300px); */
+    /* transform: skewY(25deg);*/ 
+     /* transform: rotate(360deg);  */
+    /* transform: translate(300px);  */
   }
 }

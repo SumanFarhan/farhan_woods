@@ -11,13 +11,16 @@ import "./Services.css"
 
 const servicesImagesRow1 = [
   {
-    img: image3
+    img: image3,
+    text: "Door Frames"
   },
   {
-    img: image4
+    img: image4,
+    text: "Iron Frames"
   },
   {
-    img: image5
+    img: image5,
+    text: "Wooden Building Material"
   },
 ]
 const servicesImagesRow2 = [
@@ -38,37 +41,17 @@ const Services = () => {
         <div className="servicesHeading">
           <h2>Services</h2>
         </div>
-        <Box
-          // pl={{ sm: 1 }} pr={{ sm: 5 }}
-          py={{ sm: 5 }}>
-          <Grid container rowSpacing={2} 
-          columnSpacing={{ xs: 0, sm: 0, md: 0, lg: 0 }}
-          >
-            {servicesImagesRow1?.map((v, i) => {
-              return (
-                <Grid item xs={6} lg={3} md={4} sm={6}>
-                  <div className='servicesCard'>
-                    <div className="servicesLink">
-                      hello
-                    </div>
-                    <div className="servicesimage">
-                    <img src={v?.img} style={{ width: '350px', height: '250px' }} />
-                    </div>
-                  </div>
+        <div className="servicesCardRow1">
+          {servicesImagesRow1.map((v) => {
+          return(
+            <div>
+              <div className="servicesTextLink">{v?.text}</div>
+              <div className="Image">
+                <img src={v?.img} class="img" /></div>
+            </div>
+          )})}
+        </div>
 
-                </Grid>
-              );
-            })}
-            {servicesImagesRow2?.map((v, i) => {
-              return (
-                <Grid item xs={6} lg={3.5} md={4} sm={6}>
-                  <img src={v?.img} style={{ width: '350px', height: '250px' }} />
-                </Grid>
-              );
-            })}
-
-          </Grid>
-        </Box>
 
       </div>
     </>

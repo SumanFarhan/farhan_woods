@@ -118,7 +118,8 @@ const Footer = () => {
         <hr />
         <div className="space"></div>
         <div className="textFooterCopyrightdiv">
-          &copy; Copyright {new Date().getFullYear()}  - <span className="textFooterCopyright" onClick={() => {
+          &copy; Copyright {new Date().getFullYear()}  - <span className="textFooterCopyright" 
+          onClick={() => {
             scroll.scrollToTop();
           }}>  Farhan Woods</span>
         </div>
