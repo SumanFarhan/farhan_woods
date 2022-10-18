@@ -53,6 +53,7 @@ const Footer = () => {
       <Box
         px={{ xs: 3, sm: 9 }}
         py={{ xs: 3, sm: 5 }}
+        
         bgcolor="#b98424"
         color="white"
         id="location"

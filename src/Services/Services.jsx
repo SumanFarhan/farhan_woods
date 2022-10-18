@@ -1,10 +1,8 @@
 import React from 'react'
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
 import image1 from '../asssets/Woodendoor.jpg';
 import image2 from '../asssets/window.jpg'
 import image3 from '../asssets/door frames.jpg'
-import image4 from '../asssets/iron frames.gif'
+import image4 from '../asssets/iron frames.jpg'
 import image5 from '../asssets/WOOD-MATERIAL-FEATURE.jpg'
 import "./Services.css"
 
@@ -25,10 +23,12 @@ const servicesImagesRow1 = [
 ]
 const servicesImagesRow2 = [
   {
-    img: image1
+    img: image1,
+    text: "Door"
   },
   {
-    img: image2
+    img: image2,
+    text: "Window"
   },
 
 ]
@@ -43,13 +43,25 @@ const Services = () => {
         </div>
         <div className="servicesCardRow1">
           {servicesImagesRow1.map((v) => {
-          return(
-            <div>
-              <div className="servicesTextLink">{v?.text}</div>
-              <div className="Image">
-                <img src={v?.img} class="img" /></div>
-            </div>
-          )})}
+            return (
+              <div>
+                <div className="servicesTextLink">{v?.text}</div>
+                <div className="Image">
+                  <img src={v?.img} class="img" /></div>
+              </div>
+            )
+          })}
+        </div>
+        <div className="servicesCardRow2">
+          {servicesImagesRow2.map((v) => {
+            return (
+              <div>
+                <div className="servicesTextLink">{v?.text}</div>
+                <div className="Image">
+                  <img src={v?.img} class="imgRow2" /></div>
+              </div>
+            )
+          })}
         </div>
 
 
