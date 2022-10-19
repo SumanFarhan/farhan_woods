@@ -18,7 +18,7 @@ const servicesImagesRow1 = [
   },
   {
     img: image5,
-    text: "Wooden Building Material"
+    text: "Building Material"
   },
 ]
 const servicesImagesRow2 = [
@@ -45,7 +45,7 @@ const Services = () => {
           {servicesImagesRow1.map((v) => {
             return (
               <div>
-                <div className="servicesTextLink">{v?.text}</div>
+                <div className="servicesTextLink"><h3 className='linktext'>{v?.text}</h3></div>
                 <div className="Image">
                   <img src={v?.img} class="img" /></div>
               </div>
@@ -56,7 +56,7 @@ const Services = () => {
           {servicesImagesRow2.map((v) => {
             return (
               <div>
-                <div className="servicesTextLink">{v?.text}</div>
+                <div className="servicesTextLink"><h3 className='linktext'>{v?.text}</h3></div>
                 <div className="Image">
                   <img src={v?.img} class="imgRow2" /></div>
               </div>
