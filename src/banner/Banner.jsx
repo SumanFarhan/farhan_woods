@@ -27,6 +27,7 @@ const Banner = () => {
                                             '0%': '#FAB407',
                                             '100%': 'black',
                                         }}
+                                        style={{ color: "#fff" }}
                                         percent={90}
                                     />
                                 </Fade>
