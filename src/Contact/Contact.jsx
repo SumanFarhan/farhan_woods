@@ -51,7 +51,8 @@ const Contact = () => {
           <input className="contact" type="text" value="+92334-2300564" readOnly />
         </div>
         <form className="main-form" onSubmit="#">
-          <h1>Contact Us</h1>
+          <h1>CONTACT US</h1>
+          <div className="headingline"></div>
           <div>
             <label>Name</label>     <br />
             <Input hint="Enter your name" type="text" ID="name" />

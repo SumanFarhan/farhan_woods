@@ -7,8 +7,9 @@ const About = () => {
     <>
       <div className="about" id="about">
         <div className="about_heading">
-          <h2 >About Us</h2>
-        </div>
+          <h2 >ABOUT US</h2>
+          <div className="bar"></div>
+          </div>
         <div className="aboutContent">
           <Fade left>
             <p>

@@ -11,6 +11,40 @@ body{
   margin-right: auto;
 }
 
+.bar {
+  position: relative;
+  height: 2px;
+  background: #6a6a6a;
+  width: 0%;
+  top: 0px;
+  left: -6px;
+  box-shadow: 0 0 3px rgba(192, 192, 192, 0.9);
+  animation: fill 3s infinite alternate, colors 5s infinite alternate;
+}
+
+@keyframes fill {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 190px;
+  }
+}
+
+@keyframes colors {
+  0% {
+    background-color: #493826;
+  }
+
+  50% {
+    background-color: #b98424;
+  }
+
+  100% {
+    background-color: #493826;
+  }
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

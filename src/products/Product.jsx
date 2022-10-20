@@ -4,6 +4,7 @@ import Grid from '@mui/material/Grid';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Productimage from "./Product_image";
 import Zoom from 'react-reveal/Zoom';
+import { Link } from "react-router-dom";
 import "./Product.css";
 
 const Product = () => {
@@ -29,7 +30,12 @@ const Product = () => {
         </Box>
       </div>
       <div class="productButton">
-        <div><button className="btn">View all Products <ArrowForwardIosIcon className="arrowIcon" /></button></div>
+        <div>
+          <Link to="/productpage">
+            <button className="btn">
+              View all Products
+
+              <ArrowForwardIosIcon className="arrowIcon" /></button>            </Link></div>
       </div>
     </>
   );

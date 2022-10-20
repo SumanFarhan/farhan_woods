@@ -12,15 +12,52 @@ body {
 .main-form {
   margin-left: 1rem;
   height: 100%;
-  width: 100;
+  width: 100%;
+  position: relative;
 }
 
 .main-form>h1 {
   text-align: center;
   font-weight: 600;
   font-size: 30px;
+  letter-spacing: 2.2px;
   color: #b98424;
   margin: 5px 0 5px 0;
+}
+ /* heading line */
+ .headingline {
+  position: relative;
+  height: 2px;
+  background: #6a6a6a;
+  width: 0%;
+  top: 0px;
+  left: 150px;
+  box-shadow: 0 0 3px rgba(192, 192, 192, 0.9);
+  animation: fill 3s infinite alternate, colors 5s infinite alternate;
+}
+
+@keyframes fill {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 190px;
+  }
+}
+
+@keyframes colors {
+  0% {
+    background-color: #493826;
+  }
+
+  50% {
+    background-color: #b98424;
+  }
+
+  100% {
+    background-color: #493826;
+  }
 }
 
 .main-body {
@@ -90,7 +127,11 @@ textarea {
   outline: none;
   font-size: 1.5em;
 }
-
+@media only screen and (max-width: 1100px) {
+  .headingline {
+    left: 22%;
+  }
+}
 @media only screen and (max-width: 700px) {
   .main {
     margin: 0;
@@ -118,10 +159,11 @@ textarea {
     outline: none;
     font-size: 1.4rem;
   }
-  
+
 }
+
 @media only screen and (max-width: 775px) {
-#submit{
-  margin-left: 10%;
-}
+  #submit {
+    margin-left: 10%;
+  }
 }
