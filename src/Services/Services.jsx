@@ -39,7 +39,8 @@ const Services = () => {
     <>
       <div className='mainServices' id='services'>
         <div className="servicesHeading">
-          <h2>Services</h2>
+          <h2>SERVICES</h2>
+          <div className="bar"></div>
         </div>
         <div className="servicesCardRow1">
           {servicesImagesRow1.map((v) => {

@@ -1,5 +1,8 @@
 .app_bar {
     background-color: white !important;
+    position: sticky !important;
+    top: 0% !important;
+    z-index: 9999;
 }
 
 .logo {
@@ -9,7 +12,20 @@
     margin-top: -80px;
     margin-bottom: -80px;
 }
-
+svg{
+    vertical-align: middle !important;
+    font-size: 1.25rem !important;
+}
+.headerTop {
+    min-height: 35px !important;
+    background-color: #b98424;
+    width: 100%;
+}
+.css-18gxgid-MuiPaper-root
+{
+    border-radius: 0px !important;
+    box-shadow: none !important;
+}
 .logo_responsive {
     display: none;
 }
@@ -26,8 +42,7 @@
 }
 
 .navMenu>.active {
-    /* background-color: aqua !important; */
-    border-bottom: 2px solid  #493826!important;
+    border-bottom: 2px solid #493826 !important;
 }
 
 @media screen and (max-width: 900px) {

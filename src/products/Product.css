@@ -4,12 +4,20 @@
   flex-direction: column;
 }
 
-.product>h2 {
+.productheading {
+  width: 180px;
+  height: 100px;
+  position: relative;
+  margin: 0 auto;
+} 
+
+.productheading>h2 {
   text-align: center;
   font-weight: 600;
   font-size: 30px;
+  letter-spacing: 2.2px;
   color: #b98424;
-  margin: 1em 0 1em 0;
+  margin: 1em 0 0.1em 0;
 }
 
 .productImageConatiner {
@@ -81,6 +89,7 @@
   letter-spacing: 1;
   color: white;
 }
+
 .btn:hover {
   border: none;
   color: black;

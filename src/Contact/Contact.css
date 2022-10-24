@@ -12,7 +12,7 @@ body {
 .main-form {
   margin-left: 1rem;
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
   position: relative;
 }
 
@@ -31,6 +31,7 @@ body {
   background: #6a6a6a;
   width: 0%;
   top: 0px;
+  /* text-align: center; */
   left: 150px;
   box-shadow: 0 0 3px rgba(192, 192, 192, 0.9);
   animation: fill 3s infinite alternate, colors 5s infinite alternate;

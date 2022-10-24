@@ -4,7 +4,7 @@ import "./Productanotherpage.css"
 const Productanotherpage = () => {
   return (
     <>
-    <h1>page hello</h1>
+    <h1>Product Pages</h1>
     </>
   )
 }

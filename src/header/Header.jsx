@@ -13,6 +13,7 @@ import Image from "mui-image"
 import logo from "../asssets/logo.png"
 import { Link, animateScroll as scroll } from "react-scroll";
 import "./header.css"
+import TopHeader from "./TopHeader"
 
 const pages = [
   {
@@ -54,82 +55,86 @@ const ResponsiveAppBar = () => {
   }
 
   return (
-    <AppBar position="static" className="app_bar">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <img src={logo} className="logo"
-            onClick={() => {
-              scroll.scrollToBottom();
-            }}
-          />
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
+    <>
+      <TopHeader />
+      <AppBar position="static" className="app_bar">
+        <Container maxWidth="xl">
+          <Toolbar disableGutters>
+            <img src={logo} className="logo"
+              onClick={() => {
+                scroll.scrollToBottom();
               }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" }
-              }}
-            >
-              {pages.map((v, i) => (
-                <MenuItem key={i}
-                  onClick={handleCloseNavMenu}
-                >
-                  <Typography className="navMenu"
-                    textAlign="center">
-                    <Link
-                      className="menu"
-                      activeClass="active"
-                      to={v?.link}
-                      spy={true}
-                      smooth={true}
-                    >{v?.page}</Link>
-                  </Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-          <Image src={logo} className="logo_responsive" sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((v) => (
-              <Button
-                className="navMenu"
-                key={v?.page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, display: "block", width: '118px' }}
+            />
+            <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
               >
-                <Link
-                  className="menu"
-                  activeClass="active"
-                  to={v?.link}
-                  spy={true}
-                  smooth={true}
-                >{v?.page}</Link>
-              </Button>
-            ))}
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
+                <MenuIcon />
+              </IconButton>
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: "bottom",
+                  horizontal: "left",
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "left",
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+                sx={{
+                  display: { xs: "block", md: "none" }
+                }}
+              >
+                {pages.map((v, i) => (
+                  <MenuItem key={i}
+                    onClick={handleCloseNavMenu}
+                  >
+                    <Typography className="navMenu"
+                      textAlign="center">
+                      <Link
+                        className="menu"
+                        activeClass="active"
+                        to={v?.link}
+                      // spy={false}
+                      // smooth={false}
+                      >{v?.page}</Link>
+                    </Typography>
+                  </MenuItem>
+                ))}
+              </Menu>
+            </Box>
+            <Image src={logo} className="logo_responsive" sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+            <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+              {pages.map((v) => (
+                <Button
+                  className="navMenu"
+                  key={v?.page}
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, display: "block", width: '118px' }}
+                >
+                  <Link
+                    className="menu"
+                    activeClass="active"
+                    to={v?.link}
+                    spy={true}
+                    smooth={true}
+                  >{v?.page}</Link>
+                </Button>
+              ))}
+            </Box>
+          </Toolbar>
+        </Container>
+      </AppBar>
+    </>
+
   )
 }
 export default ResponsiveAppBar

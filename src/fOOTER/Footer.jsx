@@ -36,7 +36,7 @@ const footerContact = [
   },
   {
     icon: <PhoneIcon />,
-    text: "03342300564"
+    text: "0334-2300564"
   },
   {
     icon: <AccessTimeIcon />,
