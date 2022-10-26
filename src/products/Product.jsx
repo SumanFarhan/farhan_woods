@@ -2,7 +2,7 @@ import React from "react";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import Productimage from "./Product_image";
+import Productimage from "./DataImages/Product_image";
 import { Link } from "react-router-dom";
 import "./Product.css";
 

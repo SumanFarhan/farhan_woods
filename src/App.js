@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import Home from './Home/Home'
 import { BrowserRouter ,Routes, Route,Link} from "react-router-dom";
-import Productanotherpage from './Productanotherpage/Productanotherpage';
+import Productanotherpage from './products/Productanotherpage';
 import logo from '../src/asssets/logo.png'
 import "./App.css"
 
