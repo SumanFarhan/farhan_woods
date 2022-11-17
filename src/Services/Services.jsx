@@ -4,6 +4,8 @@ import image2 from '../asssets/window.jpg'
 import image3 from '../asssets/door frames.jpg'
 import image4 from '../asssets/iron frames.jpg'
 import image5 from '../asssets/WOOD-MATERIAL-FEATURE.jpg'
+import Product from '../products/Productanotherpage'
+import Link from 'react-router-dom';
 import "./Services.css"
 
 
@@ -30,7 +32,6 @@ const servicesImagesRow2 = [
     img: image2,
     text: "Window"
   },
-
 ]
 
 
@@ -46,7 +47,7 @@ const Services = () => {
           {servicesImagesRow1.map((v) => {
             return (
               <div>
-                <div className="servicesTextLink"><h3 className='linktext'>{v?.text}</h3></div>
+                <div className="servicesTextLink"><a href={Product} className='linktext'>{v?.text}</a></div>
                 <div className="Image">
                   <img src={v?.img} class="img" /></div>
               </div>
@@ -57,7 +58,7 @@ const Services = () => {
           {servicesImagesRow2.map((v) => {
             return (
               <div>
-                <div className="servicesTextLink"><h3 className='linktext'>{v?.text}</h3></div>
+                <div className="servicesTextLink"><a href="https://www.youtube.com/watch?v=TjvuxJwZ--0" className='linktext'>{v?.text}</a></div>
                 <div className="Image">
                   <img src={v?.img} class="imgRow2" /></div>
               </div>

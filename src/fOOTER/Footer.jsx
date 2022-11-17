@@ -23,10 +23,6 @@ const footerMenuLink = [
     text: "Services",
     link: "services"
   },
-  {
-    text: "Download Catolgue",
-    link: "home"
-  },
 ]
 const footerContact = [
   {
@@ -52,7 +48,7 @@ const Footer = () => {
       <Box
         px={{ xs: 3, sm: 9 }}
         py={{ xs: 3, sm: 5 }}
-        
+
         bgcolor="#b98424"
         color="white"
         id="location"
@@ -74,6 +70,13 @@ const Footer = () => {
                   </Box>
                 );
               })}
+              <Box>
+                <a href="/assets/Farhan_woods.pdf"
+                  className="linkText" color="inherit">
+                  Download Catalogue
+                </a>
+                <hr className="line" />
+              </Box>
             </Grid>
             {/* contact us */}
             <Grid item xs={12} sm={6} md={4}>
@@ -118,10 +121,10 @@ const Footer = () => {
         <hr />
         <div className="space"></div>
         <div className="textFooterCopyrightdiv">
-          &copy; Copyright {new Date().getFullYear()}  - <span className="textFooterCopyright" 
-          onClick={() => {
-            scroll.scrollToTop();
-          }}>  Farhan Woods</span>
+          &copy; Copyright {new Date().getFullYear()}  - <span className="textFooterCopyright"
+            onClick={() => {
+              scroll.scrollToTop();
+            }}>  Farhan Woods</span>
         </div>
         <div className="socialIcon"><FacebookIcon /></div>
       </div>
