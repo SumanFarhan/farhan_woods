@@ -11,17 +11,17 @@ const Product = () => {
     <>
       <div className="product" id="product">
         <div className="productheading">
-        <h2>PRODUCTS</h2>
-        <div className="bar"></div>
+          <h2>PRODUCTS</h2>
+          <div className="bar"></div>
         </div>
         <Box sx={{ width: '100%' }}>
           <Grid container rowSpacing={0.1} spacing={0.1}>
             {Productimage?.map((v, i) => {
               return (
-                <Grid item xs={6} sm={4} md={4} lg={2.4} className="productImageConatiner">
+                <Grid key={i} item xs={6} sm={4} md={4} lg={2.4} className="productImageConatiner">
                   <img src={v?.img} className="Product_image" />
-                  <div class="overlay overLayLeft">
-                    <span class="text">{v?.text}</span>
+                  <div className="overlay overLayLeft">
+                    <span className="text">{v?.text}</span>
                   </div>
                 </Grid>
               );
@@ -29,7 +29,7 @@ const Product = () => {
           </Grid>
         </Box>
       </div>
-      <div class="productButton">
+      <div className="productButton">
         <div>
           <Link to="/productpage">
             <button className="btn">

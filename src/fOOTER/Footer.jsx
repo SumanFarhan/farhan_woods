@@ -59,9 +59,9 @@ const Footer = () => {
               <Box>
                 <h2 className="Heading">Menu</h2>
               </Box>
-              {footerMenuLink.map((v, i) => {
-                return (
-                  <Box>
+              {footerMenuLink.map((v,index) => {
+                return (  
+                  <Box key={index}>
                     <Link to={v?.link}
                       className="linkText" color="inherit">
                       {v?.text}
@@ -71,7 +71,7 @@ const Footer = () => {
                 );
               })}
               <Box>
-                <a href="/assets/Farhan_woods.pdf"
+                <a href="https://drive.google.com/file/d/1O6yhbbtAv1gO0T3GCDC7XD2AQaPo_TQQ/view?usp=sharing" target="_blank"
                   className="linkText" color="inherit">
                   Download Catalogue
                 </a>
@@ -83,10 +83,10 @@ const Footer = () => {
               <Box>
                 <h2 className="Heading">Contact Us</h2>
               </Box>
-              {footerContact?.map((v, i) => {
+              {footerContact?.map((v,i) => {
                 return (
                   <>
-                    <Box>
+                    <Box key={i}>
                       <span className="text_contactus" >
                         {v?.icon}
                         {v?.text}
@@ -105,13 +105,11 @@ const Footer = () => {
               <Box>
                 <iframe
                   className="footerMap"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.871597296205!2d67.04498604981399!3d24.79984995371534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33cfd85283a2f%3A0x8e4443010f37c9d6!2sKFC!5e0!3m2!1sen!2s!4v1664521420778!5m2!1sen!2s"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.8819443860925!2d67.00846421404867!3d24.867881351086545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33fe65f9f0c8f%3A0x5c5dc60dc960a580!2sFarhan%20Woods!5e0!3m2!1sen!2s!4v1669181425385!5m2!1sen!2s"
                   width="350"
-                  height="170"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+                  height="180"
+                  allowFullScreen=""
+                  loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
               </Box>
             </Grid>
           </Grid>

@@ -5,7 +5,7 @@ import image3 from '../asssets/door frames.jpg'
 import image4 from '../asssets/iron frames.jpg'
 import image5 from '../asssets/WOOD-MATERIAL-FEATURE.jpg'
 import Product from '../products/Productanotherpage'
-import Link from 'react-router-dom';
+import { Link } from "react-router-dom";
 import "./Services.css"
 
 
@@ -44,23 +44,23 @@ const Services = () => {
           <div className="bar"></div>
         </div>
         <div className="servicesCardRow1">
-          {servicesImagesRow1.map((v) => {
+          {servicesImagesRow1.map((v, i) => {
             return (
-              <div>
-                <div className="servicesTextLink"><a href={Product} className='linktext'>{v?.text}</a></div>
+              <div key={i}>
+                <div className="servicesTextLink"><Link to="/productpage" className='linktext'>{v?.text}</Link></div>
                 <div className="Image">
-                  <img src={v?.img} class="img" /></div>
+                  <img src={v?.img} className="img" /></div>
               </div>
             )
           })}
         </div>
         <div className="servicesCardRow2">
-          {servicesImagesRow2.map((v) => {
+          {servicesImagesRow2.map((v, index) => {
             return (
-              <div>
-                <div className="servicesTextLink"><a href="https://www.youtube.com/watch?v=TjvuxJwZ--0" className='linktext'>{v?.text}</a></div>
+              <div key={index}>
+                <div className="servicesTextLink"><Link to="/productpage" className='linktext'>{v?.text}</Link></div>
                 <div className="Image">
-                  <img src={v?.img} class="imgRow2" /></div>
+                  <img src={v?.img} className="imgRow2" /></div>
               </div>
             )
           })}

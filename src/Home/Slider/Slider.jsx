@@ -23,7 +23,7 @@ const Slider = () => {
       <Carousel autoplay>
         {sliderData?.map((v, i) => {
           return (
-            <div>
+            <div key={i}>
               <img src={v?.img} className="img_carousel" />
             </div>
           );
