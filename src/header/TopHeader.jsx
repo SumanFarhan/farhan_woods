@@ -7,6 +7,7 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
+import "./header.css"
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: '#b98424',
@@ -15,6 +16,8 @@ const Item = styled(Paper)(({ theme }) => ({
     textAlign: 'center',
     color: "white"
 }));
+
+const facebookLink = 'https://www.facebook.com/profile.php?id=100093566328012&mibextid=ZbWKwL';
 
 const TopHeader = () => {
     return (
@@ -42,7 +45,11 @@ const TopHeader = () => {
 
                         </Grid>
                         <Grid item lg={1}>
-                            <Item><FacebookIcon /></Item>
+                            <Item> 
+                            <a href={facebookLink} target="_blank" rel="noopener noreferrer">
+                                <FacebookIcon />
+                                </a>
+                                </Item>
                         </Grid>
                     </Grid>
                 </Box>

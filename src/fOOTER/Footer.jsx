@@ -42,6 +42,9 @@ const footerContact = [
     text: "XYZ,karachi"
   },
 ]
+
+const facebookLink = 'https://www.facebook.com/profile.php?id=100093566328012&mibextid=ZbWKwL';
+
 const Footer = () => {
   return (
     <>
@@ -59,8 +62,8 @@ const Footer = () => {
               <Box>
                 <h2 className="Heading">Menu</h2>
               </Box>
-              {footerMenuLink.map((v,index) => {
-                return (  
+              {footerMenuLink.map((v, index) => {
+                return (
                   <Box key={index}>
                     <Link to={v?.link}
                       className="linkText" color="inherit">
@@ -83,7 +86,7 @@ const Footer = () => {
               <Box>
                 <h2 className="Heading">Contact Us</h2>
               </Box>
-              {footerContact?.map((v,i) => {
+              {footerContact?.map((v, i) => {
                 return (
                   <>
                     <Box key={i}>
@@ -124,7 +127,10 @@ const Footer = () => {
               scroll.scrollToTop();
             }}>  Farhan Woods</span>
         </div>
-        <div className="socialIcon"><FacebookIcon /></div>
+        <div className="socialIcon">
+          <a href={facebookLink} target="_blank" rel="noopener noreferrer">
+            <FacebookIcon />
+          </a></div>
       </div>
 
     </>

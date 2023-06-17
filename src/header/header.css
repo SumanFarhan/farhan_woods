@@ -44,6 +44,9 @@ svg{
 .navMenu>.active {
     border-bottom: 2px solid #493826 !important;
 }
+a {
+    color: white !important;
+}
 
 @media screen and (max-width: 900px) {
     .logo {
@@ -58,6 +61,7 @@ svg{
         margin-bottom: -60px;
     }
 }
+
 
 @media screen and (max-width: 1000px) {
     .logo {
